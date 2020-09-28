@@ -19,21 +19,7 @@ const Index = () => {
                     <Home />
                 </Navbar>
             </Route>
-
-            <Route path='/about'>
-                <Navbar>
-                    <Jumbotron />
-                    <About />
-                </Navbar>
-            </Route>
-
-            <Route path='/contact'>
-                <Navbar>
-                    <Jumbotron />
-                    <Contact />
-                </Navbar>
-            </Route>
-
+            
             <Route path='/search/:searchMovies'>
                 <Navbar>
                     <Jumbotron />
