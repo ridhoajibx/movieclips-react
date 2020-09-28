@@ -5,10 +5,10 @@ import { NavLink } from 'react-router-dom';
 const Navbar = ({children}) => {
 
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div className="position-relative">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-blue-light fixed-top">
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand" to="/">Movies</NavLink>
+                    <NavLink className="navbar-brand" to="/">The Movies</NavLink>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -26,16 +26,12 @@ const Navbar = ({children}) => {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/contact">Contact</NavLink>
                             </li>
-
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/movies">Movies</NavLink>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-            <div>
+            <div className="py-5 mt-10">
                 {children}
             </div>
         </div>

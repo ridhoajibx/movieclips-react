@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const Index = () => {
+const Index = (props) => {
     const [movies, setMovies] = useState([]);
 
     const getMovies = async () => {
@@ -18,12 +18,12 @@ const Index = () => {
         getMovies();
     }, [])
     return (
-        <section className="container">
+        <section className="container py-4">
             <div className="row">
                 {
                     movies.map((movie, index) => {
                         return (
-                            <div key={index} className="col-lg-2 col-xs-6 my-4">
+                            <div key={index} className="col-lg-2 col-xs-6">
                                 <Link to={`/movies/${movie.id}`} className="card card-small text-decoration-none text-dark">
                                     {!movie.poster_path ? 
                                         <img src="https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg" className="card-img-top" alt="..." /> :

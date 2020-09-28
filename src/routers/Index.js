@@ -7,25 +7,37 @@ import NotFound from '../pages/errors/NotFound';
 import Navbar from '../components/Navbar';
 import MovieIndex from '../pages/movies/Index';
 import MovieShow from '../pages/movies/Show';
+import SearchMovies from '../pages/search/SearchMovies';
+import Jumbotron from '../components/Jumbotron';
 
 const Index = () => {
     return (
         <Switch>
             <Route exact path='/'>
                 <Navbar>
+                    <Jumbotron />
                     <Home />
                 </Navbar>
             </Route>
 
             <Route path='/about'>
                 <Navbar>
+                    <Jumbotron />
                     <About />
                 </Navbar>
             </Route>
 
             <Route path='/contact'>
                 <Navbar>
+                    <Jumbotron />
                     <Contact />
+                </Navbar>
+            </Route>
+
+            <Route path='/search/:searchMovies'>
+                <Navbar>
+                    <Jumbotron />
+                    <SearchMovies />
                 </Navbar>
             </Route>
 
