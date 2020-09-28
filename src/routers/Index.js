@@ -7,7 +7,7 @@ import NotFound from '../pages/errors/NotFound';
 import Navbar from '../components/Navbar';
 import MovieIndex from '../pages/movies/Index';
 import MovieShow from '../pages/movies/Show';
-import SearchMovies from '../pages/search/SearchMovies';
+import SearchMovies from '../pages/movies/SearchMovies';
 import Jumbotron from '../components/Jumbotron';
 
 const Index = () => {

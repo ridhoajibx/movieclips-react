@@ -21,6 +21,10 @@ const SearchMovies = () => {
         }
     };
 
+    useEffect(() => {
+        getMovies();
+    }, [searchMovies, page]);
+
     const nextPage = () => {
         const currentPage = page;
         if (page < totalPages) {
@@ -36,10 +40,6 @@ const SearchMovies = () => {
           setPage(prevPage);
         }
       };
-
-    useEffect(() => {
-        getMovies();
-    }, [searchMovies, page]);
 
     return (
         <section className="container py-4">

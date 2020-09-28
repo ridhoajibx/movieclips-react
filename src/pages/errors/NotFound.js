@@ -8,7 +8,6 @@ const NotFound = () => {
         setTitle(title)
     }
     
-
     useEffect(() => {
         getTitle();
     }) 
