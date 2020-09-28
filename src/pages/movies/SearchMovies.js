@@ -15,7 +15,7 @@ const SearchMovies = () => {
             let response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_APIKEY}&language=en-US&query=${searchMovies}&page=${page}`)
             setMovies(response.data.results)
             setTotalPages(response.data.total_pages)
-            console.log(movies);
+            // console.log(movies);
         } catch (e) {
             console.log(e.message);
         }
