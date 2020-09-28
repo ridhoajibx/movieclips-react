@@ -18,14 +18,6 @@ const Navbar = ({children}) => {
                                 {/* jika kita ingin mengganti clas name saat aktif maka (activeClassName='text-danger') di setiap navlink */}
                                 <NavLink exact className="nav-link" to="/">Home</NavLink>
                             </li>
-
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/about">About</NavLink>
-                            </li>
-
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/contact">Contact</NavLink>
-                            </li>
                         </ul>
                     </div>
                 </div>
